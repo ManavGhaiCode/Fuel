@@ -23,7 +23,7 @@ typedef char i8;
     #endif
 #elif defined(_WIN32) || defined (__WIN32) || defined (__WIN32__)
     #ifdef _WIN64
-        #define FUEL_PLATFORM_WINDOW
+        #define FUEL_PLATFORM_WINDOWS
     #else
         #error "64-bit Windows Required!"
     #endif
