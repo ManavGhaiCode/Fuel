@@ -1,10 +1,10 @@
 #ifndef _FUEL_MAIN_H_
 #define _FUEL_MAIN_H_
 
-#include <iostream>
+#include "log.h"
 
 int main() {
-    std::cout << "Hello World" << std::endl;
+    FUEL_TRACE("Hello World!");
     return 0;
 }
 
