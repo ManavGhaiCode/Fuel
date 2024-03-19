@@ -3,18 +3,15 @@
 
 #include "config.h"
 
+#define FUEL_ALLOCA( Size )
+
 namespace Fuel {
     u32 Time();
     u32 Clock();
-    u32 TimeNano();
-    u32 ClockNano();
+    u64 TimeNano();
+    u64 ClockNano();
 
     void Sleep( u32 ms );
-
-    void* PlatformAllocateStack( u32 Size );
-    void  PlatformFreeStack( u32 Size );
-    void* PlatformMemsetStack( u32 Size );
-    void* PlatformMemcpyStack( u32 Size );
 }
 
 #endif
