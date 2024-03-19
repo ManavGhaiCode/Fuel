@@ -3,8 +3,6 @@
 
 #include "config.h"
 
-#define FUEL_ALLOCA( Size )
-
 namespace Fuel {
     u32 Time();
     u32 Clock();

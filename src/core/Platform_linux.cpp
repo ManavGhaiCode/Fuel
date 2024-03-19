@@ -7,11 +7,6 @@
 #include <unistd.h>
 #include <alloca.h>
 
-#ifdef FUEL_ALLOCA
-    #undef FUEL_ALLOCA
-    #define FUEL_ALLOCA( Size ) alloca( Size )
-#endif
-
 namespace Fuel {
     u32 Time() {
         timespec now;
