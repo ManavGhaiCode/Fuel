@@ -5,6 +5,8 @@ project("Fuel")
 #----------Fuel Build----------
 #------------------------------
 
+set(SDL2_LIB ${CMAKE_SOURCE_DIR}/ThirdParty/SDL2/build)
+
 add_library("Fuel" STATIC
     "src/core/Engine.h"
     "src/core/Engine.cpp"
@@ -22,6 +24,11 @@ add_library("Fuel" STATIC
 
 target_include_directories("Fuel" PUBLIC
     "src"
+    "SDL2/include"
+)
+
+target_link_libraries("Fuel" PRIVATE
+    ${SDL2_LIB}/libSDL2.a
 )
 
 set_target_properties("Fuel" PROPERTIES LINKER_LANGUAGE CXX)
