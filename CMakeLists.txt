@@ -15,6 +15,9 @@ add_library("Fuel" STATIC
     "src/core/Platform_linux.cpp"
     "src/core/Platform_win32.cpp"
 
+    "src/mem.h"
+    "src/mem.cpp"
+
     "src/config.h"
     "src/log.h"
     "src/asserts.h"

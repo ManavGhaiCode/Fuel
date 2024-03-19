@@ -18,11 +18,11 @@ namespace Fuel {
     void LogAsset( const std::string exp, const std::string msg, const char* File, i32 Line );
 }
 
-#define FUEL_ASSET(exp) if (exp) else { LogAsset( #exp, "", __FILE__, __LINE__ ); }
-#define FUEL_ASSET_MSG(exp, msg) if (exp) else { LogAsset( #exp, msg, __FILE__, __LINE__ ); }
+#define FUEL_ASSET(exp) if (exp) {} else { LogAsset( #exp, "", __FILE__, __LINE__ ); }
+#define FUEL_ASSET_MSG(exp, msg) if (exp) {} else { LogAsset( #exp, msg, __FILE__, __LINE__ ); }
 
 #ifndef RELEASE
-    #define FUEL_ASSET_DEBUG(exp) if (exp) else { LogAsset( #exp, "", __FILE__, __LINE__ ); }
+    #define FUEL_ASSET_DEBUG(exp) if (exp) {} else { LogAsset( #exp, "", __FILE__, __LINE__ ); }
 #else
     #define FUEL_ASSET_DEBUG(exp)
 #endif

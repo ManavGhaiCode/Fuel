@@ -2,6 +2,7 @@
 #define _FUEL_LOG_H_
 
 #include "config.h"
+#include "asserts.h"
 
 #include <iostream>
 #include <string>
