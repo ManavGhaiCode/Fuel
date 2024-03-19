@@ -6,6 +6,9 @@ project("Fuel")
 #------------------------------
 
 add_library("Fuel" STATIC
+    "src/core/Engine.h"
+    "src/core/Engine.cpp"
+
     "src/core/Platform.h"
     "src/core/Platform_linux.cpp"
     "src/core/Platform_win32.cpp"

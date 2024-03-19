@@ -2,16 +2,15 @@
 #define _FUEL_MAIN_H_
 
 #include "log.h"
+#include "core/Engine.h"
 #include "core/Platform.h"
 
 int main() {
-    FUEL_TRACE("Hello World!"); 
-
-    FUEL_DEBUG("{}, {}", Fuel::Time(),Fuel::TimeNano());
-    FUEL_DEBUG("{}, {}", Fuel::Clock(), Fuel::ClockNano());
-
-    Fuel::Sleep( 5000 );
+    Fuel::Engine& engine = Fuel::Engine::Instance();
+    engine.Run();
     
+    std::cin.ignore();
+
     return 0;
 }
 
