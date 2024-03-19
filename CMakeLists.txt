@@ -17,6 +17,8 @@ add_library("Fuel" STATIC
 
     "src/config.h"
     "src/log.h"
+    "src/asserts.h"
+    "src/asserts.cpp"
 
     "src/main.h"
     "src/Fuel.h"

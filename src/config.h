@@ -31,4 +31,8 @@ typedef char i8;
     #error "Unsupported Platform!"
 #endif
 
+#ifndef FUEL_ENABLE_ASSERTS
+    #define FUEL_ENABLE_ASSERTS 1
+#endif
+
 #endif // _FUEL_CONFIG_H_
